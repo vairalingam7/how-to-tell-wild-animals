@@ -1,65 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Wild Animals Mind Map</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    .mindmap {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 20px;
-    }
-    li {
-      margin: 10px 0;
-      padding: 8px;
-      border-radius: 8px;
-    }
-    .bigcats { background: #ffe0e0; }
-    .others { background: #e0ffe0; }
-    .exotic { background: #e0f0ff; }
-  </style>
-</head>
-<body>
-  <h1>🌍 How to Tell Wild Animals</h1>
-  <div class="mindmap">
-    <ul>
-      <li class="bigcats">🐅 Big Cats
-        <ul>
-          <li>Lion → Roars loudly</li>
-          <li>Tiger → Stripes and ferocity</li>
-          <li>Leopard → Spots and quick attack</li>
-        </ul>
-      </li>
-      <li class="others">🐻 Other Fierce Friends
-        <ul>
-          <li>Bear → Deadly hug</li>
-          <li>Crocodile → Tears while eating</li>
-          <li>Hyena → Laughing sound</li>
-        </ul>
-      </li>
-      <li class="exotic">🐘 Exotic Oddballs
-        <ul>
-          <li>Camel → Hump on back</li>
-          <li>Chameleon → Changes color</li>
-          <li>Elephant → Huge trunk and size</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</body>
-</html>
+<h3>Big Cats</h3>
+<ul>
+  <li>
+    <strong>Lion</strong> → Known as the "King of the Jungle"; roars can be heard up to 8 km away; lives in prides; symbolizes strength and courage.
+  </li>
+  <li>
+    <strong>Tiger</strong> → Largest of the big cats; orange coat with black stripes; powerful hunter; solitary by nature; excellent swimmer.
+  </li>
+  <li>
+    <strong>Leopard</strong> → Agile climber; golden coat with dark rosettes; stealthy predator; drags prey into trees; adaptable to many habitats.
+  </li>
+</ul>
+
+<h3>Fierce Friends</h3>
+<ul>
+  <li>
+    <strong>Bear</strong> → Strong and heavy; can stand upright; known for a crushing hug; omnivorous diet; hibernates during winter.
+  </li>
+  <li>
+    <strong>Crocodile</strong> → Semi-aquatic reptile; powerful jaws; sheds "crocodile tears" while eating; ambush predator; ancient lineage dating back millions of years.
+  </li>
+  <li>
+    <strong>Hyena</strong> → Recognizable by its eerie "laugh"; scavenger but also skilled hunter; strong jaws for crushing bones; lives in clans; plays a key role in ecosystems.
+  </li>
+</ul>
+
+<h3>Oddballs</h3>
+<ul>
+  <li>
+    <strong>Chameleon</strong> → Small lizard; changes skin color to blend with surroundings; independently moving eyes; long sticky tongue; symbolizes adaptability and camouflage.
+  </li>
+</ul>
