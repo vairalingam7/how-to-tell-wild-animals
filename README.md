@@ -2,110 +2,136 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>How to Tell Wild Animals - Mind Map</title>
+<title>Advanced Mind Map - Wild Animals</title>
 <style>
     body {
+        margin: 0;
         font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #a8edea, #fed6e3);
-        text-align: center;
-    }
-    h1 {
-        margin-top: 20px;
-        color: #333;
-    }
-    .mindmap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-    }
-    .center {
-        background: #ffcc00;
-        padding: 20px;
-        border-radius: 50%;
-        font-weight: bold;
-        width: 180px;
-        height: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .branch {
-        margin: 20px;
-        padding: 15px;
-        border-radius: 15px;
-        width: 180px;
+        background: radial-gradient(circle, #1e3c72, #2a5298);
         color: white;
-        font-size: 14px;
+        overflow: hidden;
     }
-    .lion { background: #ff6f61; }
-    .tiger { background: #ff9f43; }
-    .leopard { background: #1dd1a1; }
-    .bear { background: #5f27cd; }
-    .others { background: #341f97; }
-    .theme { background: #10ac84; }
-    .tone { background: #ee5253; }
 
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .mindmap {
+        position: relative;
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .node {
+        position: absolute;
+        padding: 12px 16px;
+        border-radius: 12px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .node:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px white;
+    }
+
+    .center {
+        top: 40%;
+        left: 45%;
+        background: #feca57;
+        color: black;
+        font-weight: bold;
+    }
+
+    .lion { top: 10%; left: 20%; background: #ff6b6b; }
+    .tiger { top: 10%; right: 20%; background: #ff9f43; }
+    .leopard { top: 70%; left: 20%; background: #1dd1a1; }
+    .bear { top: 70%; right: 20%; background: #5f27cd; }
+    .others { top: 25%; left: 5%; background: #341f97; }
+    .theme { top: 25%; right: 5%; background: #10ac84; }
+    .tone { bottom: 5%; left: 45%; background: #ee5253; }
+
+    svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    line {
+        stroke: white;
+        stroke-width: 2;
+        stroke-dasharray: 5;
+        animation: dash 2s linear infinite;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: -10;
+        }
     }
 </style>
 </head>
+
 <body>
 
-<h1>🐾 How to Tell Wild Animals - Mind Map</h1>
+<h1>🐾 How to Tell Wild Animals</h1>
 
 <div class="mindmap">
-    <div class="center">Wild Animals</div>
-</div>
 
-<div class="container">
-    <div class="branch lion">
-        <b>Asian Lion</b><br>
-        Roars loudly<br>
-        You’ll know when attacked
+    <!-- Lines -->
+    <svg>
+        <line x1="50%" y1="45%" x2="20%" y2="15%" />
+        <line x1="50%" y1="45%" x2="80%" y2="15%" />
+        <line x1="50%" y1="45%" x2="20%" y2="75%" />
+        <line x1="50%" y1="45%" x2="80%" y2="75%" />
+        <line x1="50%" y1="45%" x2="5%" y2="30%" />
+        <line x1="50%" y1="45%" x2="95%" y2="30%" />
+        <line x1="50%" y1="45%" x2="50%" y2="95%" />
+    </svg>
+
+    <!-- Nodes -->
+    <div class="node center">Wild Animals</div>
+
+    <div class="node lion">
+        🦁 Lion<br>Roars loudly
     </div>
 
-    <div class="branch tiger">
-        <b>Bengal Tiger</b><br>
-        Eats you instantly<br>
-        Dangerous predator
+    <div class="node tiger">
+        🐯 Tiger<br>Eats you
     </div>
 
-    <div class="branch leopard">
-        <b>Leopard</b><br>
-        Jumps repeatedly<br>
-        Spotted body
+    <div class="node leopard">
+        🐆 Leopard<br>Jumps again & again
     </div>
 
-    <div class="branch bear">
-        <b>Bear</b><br>
-        Gives a tight hug<br>
-        Deadly grip
+    <div class="node bear">
+        🐻 Bear<br>Tight deadly hug
     </div>
 
-    <div class="branch others">
-        <b>Others</b><br>
+    <div class="node others">
+        🐊 Others<br>
         Hyena ௭ laughs<br>
         Crocodile ௭ tears<br>
         Chameleon ௭ changes color
     </div>
 
-    <div class="branch theme">
-        <b>Themes</b><br>
-        Humour in danger<br>
+    <div class="node theme">
+        🎯 Themes<br>
+        Humour<br>
         Irony<br>
-        Wildlife awareness
+        Awareness
     </div>
 
-    <div class="branch tone">
-        <b>Tone</b><br>
-        Humorous<br>
+    <div class="node tone">
+        🎭 Tone<br>
+        Funny<br>
         Playful<br>
-        Light-hearted
+        Light
     </div>
+
 </div>
 
 </body>
